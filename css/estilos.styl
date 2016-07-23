@@ -1,5 +1,7 @@
 gris_oscuro = #444
 azul = #22bce0
+naranja = #DD4F24
+
 body
 	background #e8e8e8
 	color gris_oscuro
@@ -8,33 +10,57 @@ body
 	
 header
 	background gris_oscuro
+	box-shadow 0 5px 0 rgba(0,0,0,0.2)
 	color white
+	overflow hidden
 	padding 0.5em
+	position relative
+	z-index 2
+	
 	.logo
 		border-right 1px solid azul
+		float left
 		width 60px
+		
 		img
 			width 52px
+	
 	.titular
 		margin 0 80px 0 70px
+		
 		.titulo
 			font-size 18px
 			font-weight normal
 			margin 0
 			padding 0
+	
 	.usuario
+		position absolute
+		right 10px
+		top 10px
+		
 		.avatar
+			margin 0 1.1em 0 0
+			position relative
+			z-index 69
+			
 			img
 				width 50px
 				border-radius 50%
-				position relative
-							
+		
+		.flechita
+			background naranja
+			color white
+			display block
+			padding 2px
+			position absolute
+			right 0
+			text-align right
+			text-decoration none
+			top 15px
+			width 50%
+			z-index 0
+								
 nav
 	background azul
-	
 
-.left
-	float left
-
-.right
-	float right	

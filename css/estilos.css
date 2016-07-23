@@ -6,11 +6,16 @@ body {
 }
 header {
   background: #444;
+  box-shadow: 0 5px 0 rgba(0,0,0,0.2);
   color: #fff;
+  overflow: hidden;
   padding: 0.5em;
+  position: relative;
+  z-index: 2;
 }
 header .logo {
   border-right: 1px solid #22bce0;
+  float: left;
   width: 60px;
 }
 header .logo img {
@@ -25,17 +30,33 @@ header .titular .titulo {
   margin: 0;
   padding: 0;
 }
+header .usuario {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+header .usuario .avatar {
+  margin: 0 1.1em 0 0;
+  position: relative;
+  z-index: 69;
+}
 header .usuario .avatar img {
   width: 50px;
   border-radius: 50%;
-  position: relative;
+}
+header .usuario .flechita {
+  background: #dd4f24;
+  color: #fff;
+  display: block;
+  padding: 2px;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  text-decoration: none;
+  top: 15px;
+  width: 50%;
+  z-index: 0;
 }
 nav {
   background: #22bce0;
-}
-.left {
-  float: left;
-}
-.right {
-  float: right;
 }
